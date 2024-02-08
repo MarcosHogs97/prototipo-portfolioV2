@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <title>MarcosHogs</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo">&#60;MarcosHogs&#47;&#62;</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#" onclick="scrollToSection('presentation-section')"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="scrollToSection('skills-section')"
+              >Habilidades</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="scrollToSection('section-contato')">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="presentation-section">
+        <h1>
+          Olá! Sou Marcos Henrique, Desenvolvedor
+          <strong id="back">Back-end</strong> e
+          <strong id="front">Front-end</strong>
+        </h1>
+        <p>
+          Crio soluções digitais completas e intuitivas que atendem às suas
+          necessidades.
+        </p>
+      </section>
+      <section class="skills-section">
+        <h2>Minhas Habilidades de Programação</h2>
+        <div>
+          <div class="skills-topic">
+            <h3>Linguagens de Programação</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div class="skills-topic">
+            <h3>Bibliotecas / Frameworks</h3>
+            <ul>
+              <li>React.js</li>
+              <li>Vue.js</li>
+              <li>Angular</li>
+            </ul>
+          </div>
+          <div class="skills-topic">
+            <h3>Ferramentas / Tecnologias</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Next.js</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="projetos-section">
+        <h2>Meus Projetos</h2>
+        <div class="projetos">
+          <div class="card-projetos">
+            <h2>Site Stark Team</h2>
+            <a href="https://teamstark23.github.io/TeamStark/index.html">
+              <img
+                src="Img/projetos/Site-StarkTeam.jpg"
+                alt="site do Stark Team"
+              />
+              <div class="card-projetos__content">
+                <p class="card-projetos__title">Site Team Stark</p>
+                <p class="card-projetos__description">
+                  O site foi desenvolvido com o propósito de apresentar o
+                  protótipo do software Stark Park, concebido como parte
+                  integrante de um projeto de conclusão do curso técnico em
+                  Informática para Internet do SENAI. Este projeto tem como
+                  objetivo solucionar os desafios de gestão de estacionamento
+                  enfrentados por um shopping center, proporcionando uma
+                  experiência aprimorada aos visitantes e reduzindo os custos
+                  associados à contratação de pessoal.
+                </p>
+                <p class="card-projetos__click">Click Aqui!</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-projetos">
+            <h2>Prototipo Stark Park</h2>
+            <a
+              href="https://teamstark23.github.io/TeamStarkProject/homePage.html"
+            >
+              <img
+                src="Img/projetos/Prototipo-StarkPark.jpg"
+                alt="site do prototipo Stark Park"
+              />
+              <div class="card-projetos__content">
+                <p class="card-projetos__title">Prototipo StarkPark</p>
+                <p class="card-projetos__description">
+                  O software Stark Park foi desenvolvido para atender às
+                  necessidades de um shopping center com limitação de vagas de
+                  estacionamento, especialmente durante fins de semana e
+                  feriados. Reconhecendo a importância da tecnologia na gestão
+                  eficiente, o protótipo visa otimizar a distribuição de vagas,
+                  oferecendo maior agilidade e comodidade aos clientes. Com
+                  isso, espera-se reduzir custos com contratação de pessoal e
+                  melhorar a experiência dos visitantes.
+                </p>
+                <p class="card-projetos__click">Click Aqui!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-contato">
+        <h2>Informações de Contato</h2>
+        <div>
+          <div class="contato-topic">
+            <h3>Email & Telefone</h3>
+            <ul>
+              <li><strong>Email:</strong> marcos.hogs@gmail.com</li>
+              <li><strong>Telefone:</strong> 99 99999-9999</li>
+            </ul>
+          </div>
+          <div class="contato-topic">
+            <h3>Redes Sociais</h3>
+            <ul>
+              <li>
+                <a href="https://github.com/MarcosHogs97">
+                  <img src="Img/icons/fa-brands--github-square.svg" alt="Ícone do GitHub">
+                  <span>GitHub: MarcosHogs97</span>
+                </a>            
+              </li>
+              <li>
+                <a href="https://instagram.com/MarcosHogs97">
+                  <img src="Img/icons/fa-brands--instagram.svg" alt="Ícone do Instagram">
+                  <span>Instagram: MarcosHogs97</span>
+                </a> 
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/MarcosHogs97">
+                  <img src="Img/icons/fa-brands--linkedin.svg" alt="Ícone do LinkedIn">
+                  <span>LinkedIn: MarcosHogs97</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>          
+    </main>
+    <footer class="footer">
+        <div class="footer-bottom">
+        &copy; 2024 Todos os direitos reservados. Desenvolvido por Marcos Henrique.
+        </div>
+    </footer>
+    <button class="Up-Arrow" onclick="scrollToSection('topo')"></button>
+    <script src="Js/script.js"></script>
+  </body>
+</html>

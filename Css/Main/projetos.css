@@ -1,0 +1,91 @@
+.projetos-section{
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Share Tech', sans-serif;
+}
+.projetos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
+
+.projetos h2 {
+    margin: 10px;
+    border-top: solid 1px #ffffffb2;
+    margin: 0 20px 15px 20px;
+}
+
+.card-projetos {
+  position: relative;
+  flex: 1 1 350px;
+  min-width: 200px;
+  max-width: 600px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-bottom: 20px;
+  border:  solid 2px #ffffffb7;
+  color: #ffff;
+}
+
+.card-projetos img {
+  width: 100%;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-projetos:hover {
+  box-shadow: 0 2px 6px #ffffffb7;
+}
+
+.card-projetos__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #3f3f46;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: white;
+}
+
+.card-projetos:hover .card-projetos__content {
+  transform: rotateX(0deg);
+}
+
+.card-projetos__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-projetos:hover img {
+  scale: 0;
+}
+
+.card-projetos__description {
+  margin: 10px 0 0;
+  font-size: 12pt;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.card-projetos__click{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}

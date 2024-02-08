@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron&display=swap');
+
+@import url(Header/Header.css);
+@import url(Main/Presentation.css);
+@import url(Main/projetos.css);
+@import url(Main/Skills.css);
+@import url(Main/contato.css);
+@import url(Footer/footer.css);
+/* 
+font-family: 'Share Tech', sans-serif;
+font-family: "Black Ops One", system-ui;
+font-family: 'Orbitron', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffff;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(../Img/bg/Leonardo_Diffusion_XL_create_a_representation_of_a_backend_pro_0.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Up-Arrow{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    color: transparent;
+    background-color: transparent;
+    border-radius: 20px;
+    background-image: url(../Img/icons/arrow-up-square.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

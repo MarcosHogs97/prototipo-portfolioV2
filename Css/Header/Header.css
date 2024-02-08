@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko&family=Wavefont&display=swap");
+
+header {
+  display: flex;
+  padding: 10px 30px 10px 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #ffffffb2;
+  margin: 0 20px 15px 20px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Teko", sans-serif;
+  font-size: 20pt;
+}
+
+#logo {
+  font-weight: 400;
+  font-size: 40pt;
+  font-family: "Black Ops One", system-ui;
+  background: linear-gradient(to right, rgb(255, 166, 0), red, rgb(206, 66, 2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 100%;
+  animation: gradientAnimation 3s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0%,
+  100% {
+    background-position: 0 50%;
+  }
+  20% {
+    background-position: 20% 50%;
+  }
+  40% {
+    background-position: 40% 50%;
+  }
+  60% {
+    background-position: 60% 50%;
+  }
+  80% {
+    background-position: 80% 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #logo {
+    font-size: 19pt;
+  }
+  header nav ul li a {
+    font-size: 15pt;
+  }
+}
