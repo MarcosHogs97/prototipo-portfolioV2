@@ -85,8 +85,10 @@
 }
 
 .card-projetos__description {
+  height: 90%;
+  text-align: justify;
   margin: 10px 0 0;
-  font-size: 12pt;
+  font-size: 15pt;
   font-weight: 600;
   line-height: 1.4;
 }
@@ -95,4 +97,10 @@
   position: absolute;
   bottom: 5%;
   right: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-projetos__description {
+    font-size: 12pt;
+  }
 }
