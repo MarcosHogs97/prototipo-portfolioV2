@@ -28,12 +28,16 @@ header nav ul li a {
   font-weight: 400;
   font-size: 40pt;
   font-family: "Black Ops One", system-ui;
-  background: linear-gradient(to right, rgb(255, 166, 0), red, rgb(255, 136, 0));
+  background: linear-gradient(
+    to right,
+    rgb(255, 166, 0),
+    red,
+    rgb(255, 136, 0)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400% 100%;
   animation: gradientAnimation 3s linear infinite;
-
 }
 
 @keyframes gradientAnimation {
@@ -65,5 +69,15 @@ header nav ul li a {
   }
   header {
     margin: 10px 10px 20px 10px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  #logo {
+    font-size: 15pt;
+  }
+  @media only screen and (max-width: 768px) {
+    header nav ul li a {
+      font-size: 12pt;
+    }
   }
 }
